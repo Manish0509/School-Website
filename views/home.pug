@@ -1,0 +1,48 @@
+extends base.pug 
+
+block scripts
+    script (src='/static/index.js')
+block style 
+    style
+      include ../static/style.css
+
+block content 
+    section#introSection 
+        div.big| Welcome to the Manish School 
+        div.small| Education is the key to Excellence  
+
+    section#missionSection  
+        h2  Our Mission
+        div.card
+            h3 Student Performance 
+            div.card-box
+              div.card-img 
+                  img(src="/static/img/chalkboard-solid.svg")
+              div.card-content
+                  p This is the best school when the student performance was consider.
+
+        div.card
+            h3  Expert Teaching
+            div.card-box
+              div.card-img 
+                  img(src="/static/img/2.svg")
+              div.card-content
+                  p This is the best school when the Expert Teachers was consider.
+
+        div.card
+            h3 Passout Students
+            div.card-box
+              div.card-img 
+                  img(src="/static/img/3.svg")
+              div.card-content
+                  p This is the best school when the student Higher studies was consider.
+
+    section#sponsorsSection 
+        h2  Our sponsors
+        div#sponsors
+            img(src="/static/img/microsoft.svg", alt="Sponser Image", class="spImage")
+            img(src="/static/img/accusoft.svg", alt="Sponser Image", class="spImage")
+            img(src="/static/img/skype.svg", alt="Sponser Image", class="spImage")
+            img(src="/static/img/google.svg", alt="Sponser Image", class="spImage")
+            img(src="/static/img/apple.svg", alt="Sponser Image", class="spImage")
+    
